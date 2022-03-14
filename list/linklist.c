@@ -3,6 +3,7 @@
 
 typedef struct Node
 {
+    /* data */
     int element;
     struct Node *next;
 } Node;
@@ -120,11 +121,10 @@ int main(int argc, char const *argv[])
     {
         Add(list, i);
     }
-    // for (int i = 0; i < 80; i++)
-    // {
-    //     /* code */
-    //     Remove(list, i);
-    // }
+    for (int i = 0; i < 80; i++)
+    {
+        Remove(list, i);
+    }
     print(list);
     return 0;
 }
